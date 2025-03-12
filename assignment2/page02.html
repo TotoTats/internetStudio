@@ -1,40 +1,177 @@
 <!doctype html>
 <html lang="en">
+   <!-- 
+      This class assignment is where we tell a story through a hypertext narrative.
+      The story I chose is Fantastic Mr. Fox, a film by Wes Anderson. The film is based on the book by Roald Dahl.
+    -->
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Hyperlink Narrative</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
+  <style>
+    .title {
+        font-size: 80px;
+        color: #c46b0c;
+        font-family: 'American Typewriter', Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+        h1 {
+          color:#c46b0c;
+          font-size: 60px;
+          font-family: 'American Typewriter', Arial, Helvetica, sans-serif;
+          text-align: center;
+      }
+        h2 {
+          color:#c0662a;
+          font-size: 40px;
+          font-family: 'American Typewriter', Arial, Helvetica, sans-serif;
+          text-align: center;
+        }
+        h3 {
+          color:#964d09;
+          font-size: 30px;
+          font-family: 'Baskerville', Arial, Helvetica, sans-serif;
+          text-align: center;
+      }
+        h4 {
+          color:#6d3d09;
+          font-size: 25px;
+          font-family: 'Newsreader', Arial, Helvetica, sans-serif;
+          text-align: center;
+      }
+        h5 {
+          color:#000000;
+          font-size: 20px;
+          font-family: 'Newsreader', Arial, Helvetica, sans-serif;
+          text-align: center;
+      }
 
-  <body>
-    <h1>Fantastic Mr. Fox</h1>
-    <button type="button" class="btn">Wes Anderson</button>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <style>
       body {
-        background-image: url(../Downloads/Cinema/Wes Anderson/Fantastic Mr Fox - Book Title.JPG);
-        background-color:
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-    }
-    </style>
+          background-color:#e0c385;
+          background-size: cover;
+          background-position: center;
+      }
+      .illustration {
+       max-width: 60%;
+       max-height: var(--image-max-width);
+       margin-top: var(--image-margin);
+       margin-bottom: var(--image-margin);
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .different {
+          color:#964d09;
+          font-size: 20px;
+          font-family: 'Newsreader', Arial, Helvetica, sans-serif;
+          text-align: center;
+      }
     
-    <a href = "index.html"><img src = "../Downloads/Cinema/Wes Anderson/Fantastic Mr Fox - Book Title.JPG"></a>
-    
-    <div class="text">
-      <h2>2009</h2>
-      <h3><a href="https://www.criterion.com/films/28565-fantastic-mr-fox">Criterion</a></h3>
-    </div>
-  
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">The Fox</h5>
-        <p class="card-text">Honey, I am seven non-fox years old. My father died at seven and a half. I don't want to live in a hole anymore, and I'm going to do something about it.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      .btn-primary {
+        background-color: #964d09;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      .btn-primary:hover {
+        background-color: #c46b0c;
+      }
+      .btn {
+        background-color: #964d09;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background-color: #c46b0c;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+      }
+      .content {
+        text-align: center;
+      }
+
+      .left-align {
+            text-align: left;
+        }
+
+        .center-align {
+            text-align: center;
+        }
+        .center-italic {
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Newsreader', Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+
+      .strokeme {
+    color: #000000;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+      }
+      a:hover {
+       text-decoration: underline;
+       font-family: 'Newsreader', Arial, Helvetica, sans-serif;
+      }
+  </style>
+    <body>
+      <div class="content" role="main">
+        <div class="strokeme">
+            <p class="title">Fantastic Mr. Fox</p>
+        </div>
       </div>
-  </body>
-    
+        
+      <img
+          src="https://cdn.glitch.global/37bce369-9e3a-4553-9d8d-80e90e6fb338/fox.jpg"
+          class="illustration"
+          alt="Editor illustration"
+          title="Fantastic Mr. Fox"
+        />
+      </div>
+     </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>The Beginning</h2>
+        <img
+        src="https://cdn.glitch.global/37bce369-9e3a-4553-9d8d-80e90e6fb338/breakfast02.png"
+        class="illustration"
+        alt="Editor illustration"
+        title="Fantastic Mr. Fox"
+        />
+    </div>
+
+      <p class="center-italic">Mr. Fox had a simple life with his wife and son, but he yearned for more.</p> 
+        <p class="different"><strong>Mr. Fox:</strong> I don't want to live in a hole anymore. It makes me feel poor.</p>
+          <p class="different"><strong>Mrs. Fox:</strong> We ARE poor... but we're happy.</p>
+          <p class="different"><strong>Mr. Fox:</strong> Comme ci, comme ca. Anyway, the views are better above ground.</p>
+        <p class="different"><a href="page03.html">Go somewhere</a></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
 </html>
