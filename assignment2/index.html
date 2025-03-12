@@ -1,42 +1,131 @@
 <!doctype html>
 <html lang="en">
+   <!-- 
+      This is an assignment for class where we tell a story through a hypertext narrative.
+      The story I chose is Fantastic Mr. Fox, a film by Wes Anderson. The film is based on the book by Roald Dahl.
+    -->
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Hyperlink Narrative</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-
-  <body>
-    <h1>Fantastic Mr. Fox</h1>
-    <button type="button" class="btn">Wes Anderson</button>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <style>
+  <style>
+    .title {
+        font-size: 80px;
+        color: #c46b0c;
+        font-family: 'American Typewriter', Arial, Helvetica, sans-serif;
+      }
+        h1 {
+          color:#c46b0c;
+          font-size: 60px;
+          font-family: 'American Typewriter', Arial, Helvetica, sans-serif;
+      }
+        h2 {
+          color:#c0662a;
+          font-size: 40px;
+          font-family: 'American Typewriter', Arial, Helvetica, sans-serif;
+        }
+        h3 {
+          color:#964d09;
+          font-size: 30px;
+          font-family: 'Baskerville', Arial, Helvetica, sans-serif;
+      }
+        h4 {
+          color:#964d09;
+          font-size: 25px;
+          font-family: 'Baskerville', Arial, Helvetica, sans-serif;
+      }
       body {
-        background-image: url(../Downloads/Cinema/Wes Anderson/Fantastic Mr. Fox - Book Title.JPG);
-        background-color:
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-    }
-    </style>
-    
-    <a href = "index.html"><img src = "../Downloads/Cinema/Wes Anderson/Fantastic Mr Fox - Book Title.JPG"></a>
-    
-    <div class="text">
-      <h2>2009</h2>
-      <h3><a href="https://www.criterion.com/films/28565-fantastic-mr-fox">Criterion</a></h3>
-    </div>
-  
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Beginning</h5>
-        <p class="card-text">I don't want to live in a hole anymore. It makes me feel poor.
-Mrs. Fox: We ARE poor... but we're happy.
-Mr. Fox: Comme ci, comme ca. Anyway, the views are better above ground.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-  </body>
+          background-color:#f1b636;
+          background-image: url(images/pexels-paper-copy.jpg);
+          background-size: cover;
+          background-position: center;
+      }
+      .illustration {
+       max-width: 70%;
+       max-height: var(--image-max-width);
+       margin-top: var(--image-margin);
+       margin-bottom: var(--image-margin);
+       margin-left: auto;
+       margin-right: auto;
+       display: block;
+      }
+      .different {
+          color:#964d09;
+          font-size: 40px;
+          font-family: 'Baskerville', Arial, Helvetica, sans-serif;
+      }
+      .left-align {
+            text-align: left;
+        }
 
+        .center-align {
+            text-align: center;
+        }
+
+      .strokeme {
+    color: #000000;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+      }
+      .cssBackgroundImg {
+        background-image: url(cover.jpg);
+        width: 400px;
+        height: 400px;
+        margin: 64px auto;
+      }
+      .cssBackgroundImg:hover {
+        background-image: url(fox.jpg);
+        cursor: crosshair;
+      }
+      a:hover {
+      text-decoration: underline;
+      }
+  </style>
+    <body>
+    <div class="cssBackgroundImg">
+      <!--loading the image in this division with the parent and child image classes-->
+    </div>
+    <!--
+      The body includes the content you see in the page
+      Each element is defined using tags, like this <div></div>
+    -->
+      <div class="wrapper">
+        <div class="content" role="main">
+          <div class="strokeme">
+          <p class="center-align"><span class="title">Fantastic Mr. Fox</span></p>
+          <h1><p class="center-align"><span class="different">A Hypertext Narrative</span></p></h1>
+          <h2><p class="center-align">2009</h2></p>
+        </div>
+      </div>
+    </div>
+    <!--  🚧 TODO: ADD BUTTON HERE --> 
+      <h2><p class="center-align"><a href="https://www.studiobinder.com/blog/wes-anderson-style/" target="new">
+        <button type="button" <span class="different">Wes Anderson</a></button></p></h2>
+       <p class="center-align"><a href="https://www.criterion.com/films/28565-fantastic-mr-fox" target="new">
+        <span class="different">Criterion Collection</span></a></p>
+      
+        <div class="wrapper">
+      <div class="content" role="main">
+          <h4><p class="center-align">The film is based on the book by Roald Dahl.</h4></p>
+    </div>
+        <img
+          src="https://cdn.glitch.global/37bce369-9e3a-4553-9d8d-80e90e6fb338/cover.jpg"
+          class="illustration"
+          alt="Editor illustration"
+          title="Fantastic Mr. Fox"
+        />
+        <h3><p class="center-align">This is a story about a fox who wanted more than a hole in the ground.</h3></p>
+          <h3><p class="center-align">Here is the <a href="page02.html">story.</a></h3></p>
+      </div>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+     </body>
 </html>
