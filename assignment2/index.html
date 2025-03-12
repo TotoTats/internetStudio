@@ -16,29 +16,41 @@
         font-size: 80px;
         color: #c46b0c;
         font-family: 'American Typewriter', Arial, Helvetica, sans-serif;
+        text-align: center;
       }
         h1 {
           color:#c46b0c;
           font-size: 60px;
           font-family: 'American Typewriter', Arial, Helvetica, sans-serif;
+          text-align: center;
       }
         h2 {
           color:#c0662a;
           font-size: 40px;
           font-family: 'American Typewriter', Arial, Helvetica, sans-serif;
+          text-align: center;
         }
         h3 {
           color:#964d09;
           font-size: 30px;
-          font-family: 'Baskerville', Arial, Helvetica, sans-serif;
+          font-family: 'Newsreader', Arial, Helvetica, sans-serif;
+          text-align: center;
       }
         h4 {
-          color:#964d09;
+          color:#6d3d09;
           font-size: 25px;
-          font-family: 'Baskerville', Arial, Helvetica, sans-serif;
+          font-family: 'Newsreader', Arial, Helvetica, sans-serif;
+          text-align: center;
       }
+      h5 {
+          color:#000000;
+          font-size: 20px;
+          font-family: 'Newsreader', Arial, Helvetica, sans-serif;
+          text-align: center;
+      }
+
       body {
-          background-color:#f1b636;
+          background-color:#e0c385;
           background-image: url(images/pexels-paper-copy.jpg);
           background-size: cover;
           background-position: center;
@@ -51,18 +63,28 @@
        margin-left: auto;
        margin-right: auto;
        display: block;
+       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       }
+
       .different {
           color:#964d09;
           font-size: 40px;
-          font-family: 'Baskerville', Arial, Helvetica, sans-serif;
+          font-family: 'Newreader', Arial, Helvetica, sans-serif;
+          text-align: center;
       }
+
       .left-align {
             text-align: left;
         }
 
         .center-align {
             text-align: center;
+        }
+        .center-italic {
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Newsreader', Arial, Helvetica, sans-serif;
+            font-style: italic;
         }
 
       .strokeme {
@@ -73,46 +95,30 @@
     -1px 1px 0 #000,
     1px 1px 0 #000;  
       }
-      .cssBackgroundImg {
-        background-image: url(cover.jpg);
-        width: 400px;
-        height: 400px;
-        margin: 64px auto;
-      }
-      .cssBackgroundImg:hover {
-        background-image: url(fox.jpg);
-        cursor: crosshair;
-      }
       a:hover {
       text-decoration: underline;
+      font-family: 'Newsreader', Arial, Helvetica, sans-serif;
       }
   </style>
     <body>
-    <div class="cssBackgroundImg">
-      <!--loading the image in this division with the parent and child image classes-->
-    </div>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-    -->
       <div class="wrapper">
         <div class="content" role="main">
           <div class="strokeme">
-          <p class="center-align"><span class="title">Fantastic Mr. Fox</span></p>
-          <h1><p class="center-align"><span class="different">A Hypertext Narrative</span></p></h1>
-          <h2><p class="center-align">2009</h2></p>
+          <p class="title">Fantastic Mr. Fox</p>
+          <h1><p class="different">A Hypertext Narrative</p></h1>
+          <h2>2009</h2>
         </div>
       </div>
     </div>
     <!--  🚧 TODO: ADD BUTTON HERE --> 
-      <h2><p class="center-align"><a href="https://www.studiobinder.com/blog/wes-anderson-style/" target="new">
-        <button type="button" <span class="different">Wes Anderson</a></button></p></h2>
-       <p class="center-align"><a href="https://www.criterion.com/films/28565-fantastic-mr-fox" target="new">
-        <span class="different">Criterion Collection</span></a></p>
+      <h2><a href="https://www.studiobinder.com/blog/wes-anderson-style/" target="new">
+        <button type="button"><span class="different">Wes Anderson</a></button></h2>
+       <h3><a href="https://www.criterion.com/films/28565-fantastic-mr-fox" target="new">
+        <span class="different">Criterion Collection</a></h3>
       
         <div class="wrapper">
       <div class="content" role="main">
-          <h4><p class="center-align">The film is based on the book by Roald Dahl.</h4></p>
+          <h4>The film is based on the book by Roald Dahl.</h4>
     </div>
         <img
           src="https://cdn.glitch.global/37bce369-9e3a-4553-9d8d-80e90e6fb338/cover.jpg"
@@ -120,8 +126,8 @@
           alt="Editor illustration"
           title="Fantastic Mr. Fox"
         />
-        <h3><p class="center-align">This is a story about a fox who wanted more than a hole in the ground.</h3></p>
-          <h3><p class="center-align">Here is the <a href="page02.html">story.</a></h3></p>
+        <h3>This is a story about a fox who wanted more than a hole in the ground.</h3>
+          <h3>Here is the <a href="page02.html">story.</a></h3>
       </div>
     </div>
 
